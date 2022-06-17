@@ -1,0 +1,30 @@
+body{
+    /* background-color: #AB8296; */
+    background: linear-gradient(90deg, #783656, #AB8296);
+    /* background-image: var(--bs-gradient); */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.title-wc{
+    padding-left: 30px;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+
+.navbar{
+    background: linear-gradient(90deg, #1077C3, #B7D6ED);
+    
+}
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.group-stage{
+    background: linear-gradient(90deg, #58A0D5, #CFE4F3);
+    margin-top: 50px;
+}
