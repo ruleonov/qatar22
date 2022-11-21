@@ -1,57 +1,60 @@
+// ############################# Group objects #####################################
+// Later to be reorganized to work with the DB
+
 const groupA = [{
   flag: "img\\flags\\qa.png",
   team: 'Qatar',
   wins: 0,
-  losses: 0,
-  goalDiff: 0,
+  losses: 1,
+  goalDiff: -3,
   points: 0,
-  position: 1
+  position: 4
 },
 {
   flag: "img\\flags\\ec.png",
   team: 'Ecuador',
-  wins: 0,
+  wins: 1,
   losses: 0,
-  goalDiff: 0,
-  points: 0,
-  position: 2
+  goalDiff: 3,
+  points: 3,
+  position: 1
 },
 {
   flag: "img\\flags\\sn.png",
   team: 'Senegal',
   wins: 0,
-  losses: 0,
-  goalDiff: 0,
+  losses: 1,
+  goalDiff: -2,
   points: 0,
   position: 3
 },
 {
   flag: "img\\flags\\nl.png",
   team: 'Netherlands',
-  wins: 0,
+  wins: 1,
   losses: 0,
-  goalDiff: 0,
-  points: 0,
-  position: 4
+  goalDiff: 2,
+  points: 3,
+  position: 2
 }];
 
 const groupB = [{
   flag: "img\\flags\\_England.png",
   team: 'England',
-  wins: 0,
+  wins: 1,
   losses: 0,
-  goalDiff: 0,
-  points: 0,
+  goalDiff: 4,
+  points: 3,
   position: 1
 },
 {
   flag: "img\\flags\\ir.png",
   team: 'Iran',
   wins: 0,
-  losses: 0,
-  goalDiff: 0,
+  losses: 1,
+  goalDiff: -4,
   points: 0,
-  position: 2
+  position: 4
 },
 {
   flag: "img\\flags\\us.png",
@@ -60,7 +63,7 @@ const groupB = [{
   losses: 0,
   goalDiff: 0,
   points: 0,
-  position: 3
+  position: 2
 },
 {
   flag: "img\\flags\\_Wales.png",
@@ -69,18 +72,253 @@ const groupB = [{
   losses: 0,
   goalDiff: 0,
   points: 0,
+  position: 3
+}];
+
+const groupC = [{
+  flag: "img\\flags\\ar.png",
+  team: 'Argentina',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\sa.png",
+  team: 'Saudi Arabia',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\mx.png",
+  team: 'Mexico',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\pl.png",
+  team: 'Poland',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
   position: 4
 }];
 
+const groupD = [{
+  flag: "img\\flags\\fr.png",
+  team: 'France',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\au.png",
+  team: 'Australia',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\dk.png",
+  team: 'Denmark',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\tn.png",
+  team: 'Tunisia',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 4
+}];
+
+const groupE = [{
+  flag: "img\\flags\\es.png",
+  team: 'Spain',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\cr.png",
+  team: 'Costa Rica',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\de.png",
+  team: 'Germany',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\jp.png",
+  team: 'Japan',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 4
+}];
+
+const groupF = [{
+  flag: "img\\flags\\be.png",
+  team: 'Belgium',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\ca.png",
+  team: 'Canada',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\ma.png",
+  team: 'Morocco',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\hr.png",
+  team: 'Croatia',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 4
+}];
+
+const groupG = [{
+  flag: "img\\flags\\br.png",
+  team: 'Brazil',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\rs.png",
+  team: 'Serbia',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\ch.png",
+  team: 'Switzerland',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\cm.png",
+  team: 'Cameroon',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 4
+}];
+
+const groupH = [{
+  flag: "img\\flags\\pt.png",
+  team: 'Portugal',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 1
+},
+{
+  flag: "img\\flags\\gh.png",
+  team: 'Ghana',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 2
+},
+{
+  flag: "img\\flags\\uy.png",
+  team: 'Uruguay',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 3
+},
+{
+  flag: "img\\flags\\kr.png",
+  team: 'South Korea',
+  wins: 0,
+  losses: 0,
+  goalDiff: 0,
+  points: 0,
+  position: 4
+}];
+
+// ############################# FUNCTIONS #####################################
+
+// Creating table header
+
+let chartHeaderText = `<thead><tr><th scope="col">#</th><th scope="col">Flag</th><th scope="col">Team</th><th scope="col">Wins</th><th scope="col">Losses</th><th scope="col">Goal diff.</th><th scope="col">Points</th></tr></thead>`;
+allCharts = document.querySelectorAll('table')
+
+allCharts.forEach(function(item){
+  item.innerHTML = chartHeaderText;
+});
+
+// Updating table 
+
 let teamRow = '';
 
-// Updating team row information
 function updateTable(group, n = 0){
   // let n = 0;
   return teamRow = `<tr><th scope="row">${group[n].position}</th><td><img src="${group[n].flag}" width="30px" alt=""></td><td>${group[n].team}</td><td>${group[n].wins}</td><td>${group[n].losses}</td><td>${group[n].goalDiff}</td><td>${group[n].points}</td></tr>`;
 }
 
-// Updating team results
+// Updating team results via the code (if needed)
+
 function updateTeam(group, n = 0, teamWin, teamLoss, goalsScored, goalsConc, teamPts, teamPos){
   group[n].wins += teamWin;
   group[n].losses += teamLoss;
@@ -115,6 +353,8 @@ function createTable(group, groupName){
   }
 }
 
+
+
 // Finally putting group info
 
 // testing team update
@@ -129,12 +369,17 @@ function createTable(group, groupName){
 // updateTeam(groupB, 2, 0, 1, 1, 3, 0, 2);
 // updateTeam(groupB, 3, 1, 0, 3, 1, 3, 1);
 
+
 createTable(groupA, 'group-a');
 createTable(groupB, 'group-b');
+createTable(groupC, 'group-c');
+createTable(groupD, 'group-d');
+createTable(groupE, 'group-e');
+createTable(groupF, 'group-f');
+createTable(groupG, 'group-g');
+createTable(groupH, 'group-h');
 
 // Highlighting leaders and relegations
-
-
 
 // let firstPlace = document.querySelectorAll('tr.first-place');
 
